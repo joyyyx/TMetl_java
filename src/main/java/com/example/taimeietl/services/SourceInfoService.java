@@ -10,5 +10,6 @@ public interface SourceInfoService {
    public int insertRecord(SourceInfo sourceInfo);
    public int updateRecord(SourceInfo sourceInfo);
    public int deleteRecord(int id);
-
+   SourceInfo selectByPrimaryKey(Integer id);
+   SourceInfo selectBySourceType(Integer sourceType);
 }

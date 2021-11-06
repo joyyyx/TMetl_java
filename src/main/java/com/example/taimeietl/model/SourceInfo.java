@@ -115,7 +115,13 @@ public class SourceInfo {
      *
      * @mbg.generated Thu May 20 13:48:22 CST 2021
      */
-    public SourceInfo(Integer id, String sourceName, String sourceIp, String sourcePort, String sourceDb, String sourceUser, String sourcePwd, String usedbName, Integer mark, String dbType, Integer sourceType, String cron) {
+
+    private Integer sourceStatus;
+
+    private String sourceSlog;
+
+    public SourceInfo(Integer id, String sourceName, String sourceIp, String sourcePort, String sourceDb, String sourceUser, String sourcePwd, String usedbName, Integer mark,
+                      String dbType, Integer sourceType, String cron,Integer sourceStatus,String sourceSlog) {
         this.id = id;
         this.sourceName = sourceName;
         this.sourceIp = sourceIp;
@@ -128,6 +134,24 @@ public class SourceInfo {
         this.dbType = dbType;
         this.sourceType = sourceType;
         this.cron = cron;
+        this.sourceStatus = sourceStatus;
+        this.sourceSlog = sourceSlog;
+    }
+
+    public Integer getSourceStatus() {
+        return sourceStatus;
+    }
+
+    public void setSourceStatus(Integer sourceStatus) {
+        this.sourceStatus = sourceStatus;
+    }
+
+    public String getSourceSlog() {
+        return sourceSlog;
+    }
+
+    public void setSourceSlog(String sourceSlog) {
+        this.sourceSlog = sourceSlog;
     }
 
     /**

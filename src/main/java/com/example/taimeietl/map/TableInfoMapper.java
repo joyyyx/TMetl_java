@@ -4,6 +4,7 @@ import com.example.taimeietl.model.TableInfo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
+import java.util.Map;
 
 @Mapper
 public interface TableInfoMapper {
@@ -55,4 +56,17 @@ public interface TableInfoMapper {
      * @mbg.generated Thu May 20 22:05:30 CST 2021
      */
     int updateByPrimaryKey(TableInfo record);
+
+    int createTable(int sid,int tid, int reCreate);
+
+    int updateInit(TableInfo record);
+    //    检查表是否存在
+    int checkTable(String tableName);
+
+    int handleTable(int sid,int tid ,int method,String partitionFields);
+
+    List<TableInfo> selectAllBySid(int sid);
+
+    void runSQL(String sql);
+    List<Map<String,String>> selectSQL(String sql);
 }

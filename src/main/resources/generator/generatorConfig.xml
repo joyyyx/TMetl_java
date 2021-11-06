@@ -60,7 +60,7 @@
 <!--        <table tableName="admin" domainObjectName="Admin" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
 <!--            <property name="rootInterface" value="com.*.dao.AdminExtMapper"/>-->
 <!--        </table>-->
-        <table tableName="TABLE_INFO" domainObjectName="TableInfo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+        <table tableName="DR_VIEW" domainObjectName="DrView" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
 <!--            <property name="useActualColumnNames" value="false"/>-->
         </table>
 

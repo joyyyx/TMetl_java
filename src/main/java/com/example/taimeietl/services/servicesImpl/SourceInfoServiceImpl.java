@@ -34,4 +34,15 @@ public class SourceInfoServiceImpl implements SourceInfoService {
         int re = sourceInfoMapper.deleteByPrimaryKey(id);
         return re;
     }
+
+    @Override
+    public SourceInfo selectByPrimaryKey(Integer id) {
+        return sourceInfoMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public SourceInfo selectBySourceType(Integer sourceType) {
+        return sourceInfoMapper.selectBySourceType(sourceType);
+    }
+
 }
